@@ -1,9 +1,11 @@
 import { useLoaderData } from "react-router-dom";
-import Banner from "../Banner";
-import Brands from "../Brands";
+import Banner from "./Banner";
+import Brands from "./Brands";
+import News from "./News";
+
 import { useState } from "react";
-import News from "../News";
-import OurProduct from "../ourproduct/OurProduct";
+
+import OurProduct from "./ourproduct/OurProduct";
 
 const Home = () => {
   const loadedBrands = useLoaderData();
