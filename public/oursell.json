@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "img": "https://cdn-icons-png.flaticon.com/512/4477/4477610.png",
+      "name": "Mobile",
+      "small_desc": "A sleek and powerful smartphone for all your communication and entertainment needs."
+    },
+    {
+      "id": 2,
+      "img": "https://cdn-icons-png.flaticon.com/512/428/428001.png",
+      "name": "Laptop",
+      "small_desc": "A high-performance laptop that enables you to work, study, and play on the go."
+    },
+    {
+      "id": 3,
+      "img": "https://cdn-icons-png.flaticon.com/512/1042/1042390.png",
+      "name": "Camera",
+      "small_desc": "Capture stunning photos and videos with this professional-grade camera."
+    },
+    {
+      "id": 4,
+      "img": "https://cdn-icons-png.flaticon.com/512/2489/2489971.png",
+      "name": "GoPro",
+      "small_desc": "An action camera designed to record your adventurous moments in high-definition."
+    },
+    {
+      "id": 5,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Circle-icons-tablet.svg/800px-Circle-icons-tablet.svg.png",
+      "name": "Tablet",
+      "small_desc": "A versatile tablet that lets you browse, read, and watch content with ease."
+    },
+    {
+      "id": 6,
+      "img": "https://cdn-icons-png.flaticon.com/512/421/421016.png",
+      "name": "Smartwatch",
+      "small_desc": "A smartwatch that helps you stay connected and track your fitness goals."
+    }
+  ]
+  
