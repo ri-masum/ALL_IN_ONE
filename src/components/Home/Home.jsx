@@ -15,14 +15,14 @@ const Home = () => {
     <div className="min-h-screen">
       <div>
         <Banner></Banner>
-        <div className="mt-10 p-16">
+        <div className=" p-16 bg-black">
             <h1 className="text-5xl font-semibold text-center mb-6 ">Our Top Sells</h1>
             <OurProduct></OurProduct>
         </div>
 
         <div>
-          <div className="mt-10">
-            <h1 className="text-5xl text-center font-semibold">
+          <div className="mt-10 bg-white">
+            <h1 className="text-5xl text-center font-semibold text-black  mt-10">
               {" "}
               Choose Your Brand
             </h1>
@@ -34,7 +34,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="mt-10 mb-10">
+        <div className=" mb-10">
           <News></News>
         </div>
 

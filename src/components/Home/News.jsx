@@ -1,6 +1,6 @@
 const News = () => {
   return (
-    <div>
+    <div className="text-black bg-white">
       <h1 className="text-5xl font-semibold text-center mb-10 ">Our News</h1>
      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-11/12 mx-auto">
      <div className="card card-compact w-96 bg-base-100 shadow-sm rounded-none">

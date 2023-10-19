@@ -1,6 +1,11 @@
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../AuthProvider/AuthProvider";
+import { useContext } from "react";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+
   return (
     <div>
       <div className=" max-w-full bg-white text-white mx-auto py-5">
@@ -26,7 +31,7 @@ const Navbar = () => {
             className="flex  md:w-3/4  mt-5  md:mt-0 justify-between  text-black items-center"
 
           >
-            <NavLink
+             <NavLink
               to="/"
               className={({ isActive, isPending }) =>
                 isPending
@@ -38,6 +43,9 @@ const Navbar = () => {
             >
               Home
             </NavLink>
+           {
+            user ? <>
+            
             <NavLink
               to="/addproduct"
               className={({ isActive, isPending }) =>
@@ -62,7 +70,44 @@ const Navbar = () => {
             >
               My Cart
             </NavLink>
-            <NavLink
+            <div className="flex gap-3 items-center">
+                {user.photoURL ? (
+                  <img
+                    src={user.photoURL}
+                    className="w-6 md:w-10 rounded-full"
+                    data-aos="fade-right"
+                  />
+                ) : (
+                  <img
+                    src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=740&t=st=1696843360~exp=1696843960~hmac=0004b2d3254e070798148e640c5dd5a807dfcd93967cb6e0919429c25564e71c"
+                    className="w-10 rounded-full"
+                  />
+                )}
+                {user.displayName ? (
+                  <p
+                    className="text-yellow-400 text-sm md:text-lg"
+                    data-aos="zoom-in"
+                  >
+                    {user.displayName}
+                  </p>
+                ) : (
+                  <p className="text-[#C79A61]">userName</p>
+                )}
+
+                <button
+                  onClick={() => logOut()}
+                  className="hover:cursor-pointer"
+                  
+                >
+                  Logout
+                </button>
+              </div>
+            
+            </>
+            :
+            <>
+            
+                 <NavLink
               to="/signin"
               className={({ isActive, isPending }) =>
                 isPending
@@ -86,6 +131,10 @@ const Navbar = () => {
             >
               SignUp
             </NavLink>
+            </>
+
+           }
+       
           </div>
         </div>
       </div>
