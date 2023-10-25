@@ -30,7 +30,10 @@ const Card = ({ data }) => {
           <button className="btn btn-success" >View Details</button>
 
           </Link>
-            <button className="btn btn-primary">Update</button>
+          <Link to={`/update/${data._id}`}>
+          <button className="btn btn-primary">Update</button>
+
+          </Link>
           </div>
         </div>
       </div>

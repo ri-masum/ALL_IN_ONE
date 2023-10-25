@@ -18,6 +18,7 @@ import PrivetRoute from './components/PrivetRoute/PrivetRoute.jsx';
 import Error from './components/Error/Error';
 import ShowProduct from './components/ShowProduct/ShowProduct';
 import Details from './components/ShowProduct/details';
+import UpdateProduct from './components/AddProduct/UpdateProduct';
 // import UpdateProduct from './components/AddProduct/UpdateProduct';
 
 
@@ -59,6 +60,12 @@ const router = createBrowserRouter([
       path:"/details/:id",
       element:<PrivetRoute><Details></Details></PrivetRoute>,
       loader:()=>fetch("http://localhost:2000/Products")
+     },
+
+     {
+      path:"/update/:id",
+      element:<PrivetRoute><UpdateProduct></UpdateProduct></PrivetRoute>,
+      loader:({params})=>fetch(`http://localhost:2000/Products/${params.id}`)
      }
 
     ]
