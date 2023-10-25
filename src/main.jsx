@@ -16,6 +16,8 @@ import Signin from './components/SignUp and Login/Signin.jsx';
 import AuthProvider from './components/AuthProvider/AuthProvider.jsx';
 import PrivetRoute from './components/PrivetRoute/PrivetRoute.jsx';
 import Error from './components/Error/Error';
+import ShowProduct from './components/ShowProduct/ShowProduct';
+// import UpdateProduct from './components/AddProduct/UpdateProduct';
 
 
 const router = createBrowserRouter([
@@ -28,7 +30,15 @@ const router = createBrowserRouter([
         path:"/",
         element:<Home></Home>,
         loader:()=>fetch('/brand.json')
-      },{
+      },
+      {
+        path:"/brands/:brand",
+        element:<ShowProduct></ShowProduct>,
+        loader:()=>fetch("/brand.json")
+      }
+      
+      
+      ,{
         path:"/addProduct",
         element:<PrivetRoute><AddProduct></AddProduct></PrivetRoute>
       },
@@ -43,7 +53,12 @@ const router = createBrowserRouter([
       {
         path:"/signin",
         element:<Signin></Signin>
-      }
+      },
+      // {
+      //   path:"/updateProduct/:id",
+      //   element:<UpdateProduct></UpdateProduct>,
+      //   loader:({params})=>fetch(`http://localhost:2000/addProduct${params._id}`)
+      // }
 
     ]
   },

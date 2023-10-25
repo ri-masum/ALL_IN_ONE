@@ -47,7 +47,7 @@ const Navbar = () => {
             user ? <>
             
             <NavLink
-              to="/addproduct"
+              to="addProduct"
               className={({ isActive, isPending }) =>
                 isPending
                   ? "pending text-black"

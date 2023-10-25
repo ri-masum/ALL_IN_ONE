@@ -2,32 +2,51 @@
     {
       "id": 1,
       "img": "https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png",
-      "brand_name": "Apple"
+      "brand_name": "Apple",
+      "banner_img1":"https://www.erajaya.com/files/uploads/newseventattachment/uri/2021/Jan/15/600188b518f4a/available-web-banner-iphone-12-pro-dekstop-1091x_.jpg?token=3063ae63cef065bef572f6acc6e2787c",
+      "banner_img2":"https://i0.wp.com/www.applestore.pk/wp-content/uploads/2020/03/iPhone-11-Pro-Inner-Banner-1920-X-710-Website.jpg?ssl=1",
+      "banner_img3":"https://machive.com.pk/wp-content/uploads/2020/10/iphone-12-pro-banner-islamabad.jpg"
+
     },
     {
       "id": 2,
       "img": "https://images.samsung.com/is/image/samsung/assets/bd/about-us/brand/logo/mo/360_197_1.png?$FB_TYPE_B_PNG$",
-      "brand_name": "Samsung"
+      "brand_name": "Samsung",
+      "banner_img1":"https://i.pinimg.com/originals/ea/bd/aa/eabdaadef69a169117a2900e77bfde9f.jpg",
+      "banner_img2":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ZjCj8sND4knyq07EK7SHhkKr6bWoS1H5_naJZgkoWRU0u_q0u7Bi_Osl-LobdUtRirk&usqp=CAU",
+      "banner_img3":"https://fdn.gsmarena.com/imgroot/news/19/02/samsung-galaxy-s10-detailed-specs/-728x314/gsmarena_000.jpg"
     },
     {
       "id": 3,
       "img": "https://logos-world.net/wp-content/uploads/2020/04/Sony-Logo.png",
-      "brand_name": "Sony"
+      "brand_name": "Sony",
+      "banner_img1":"https://buythevalue.in/cdn/shop/collections/sony_brand.jpg?v=1570778771",
+      "banner_img2":"https://uat-app.viveks.com/media/mgs_brand/s/o/sony_banner.jpeg",
+      "banner_img3":"https://mir-s3-cdn-cf.behance.net/project_modules/hd/d278b176785161.5c745bed3014c.jpg"
     },
     {
       "id": 4,
       "img": "https://1000logos.net/wp-content/uploads/2016/11/google-logo.jpg",
-      "brand_name": "Google"
+      "brand_name": "Google",
+      "banner_img1":"https://www.harveynorman.com.au/media/wysiwyg/Google/Pixel/Google-pixel-7-pro-banner.jpg",
+      "banner_img2":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRABSFLubSYuTxP8QolIUeoYro60_gEEmUM3mrEgmM8O9oq-tvmWVQmfwJ7aFtivCqJ-j0&usqp=CAU",
+      "banner_img3":"https://img.freepik.com/premium-psd/horizontal-website-banne_451189-110.jpg"
     },
     {
       "id": 5,
       "img": "https://cdn.mos.cms.futurecdn.net/MKBZhC5Dz7u76BeTtkgW3a.jpg",
-      "brand_name": "Intel"
+      "brand_name": "Intel",
+      "banner_img1":"https://promotions.newegg.com/FlagShip/intel/banner_1.jpg",
+      "banner_img2":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdLtMA2DGRDzpDGLX5P-XZOyRtB0Smhtp8fJ33O40h7annktHw1aaCHQvuOcYG4eJn8sA&usqp=CAU",
+      "banner_img3":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf608d3o2gJktVjPn4H_dqjqJICSrd-jFKola9vG6n6eOiKcc8nSmOpILPjX85xUZYWOg&usqp=CAU"
     },
     {
       "id": 6,
       "img": "https://1000logos.net/wp-content/uploads/2017/03/Lenovo-Logo-1.png",
-      "brand_name": "Lenevo"
+      "brand_name": "Lenevo",
+      "banner_img1":"https://www.gbscomputers.com/images/laptop-showroom-chennai/lenovo-banner-new.webp",
+      "banner_img2":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0CMCRpVvu_clWO04EYdaMwg33kGVaexhUEw&usqp=CAU",
+      "banner_img3":"https://media.licdn.com/dms/image/D4E12AQEypryieNmaZg/article-cover_image-shrink_720_1280/0/1678107237855?e=2147483647&v=beta&t=a_9Emo3o_aygWQOeiadwd8LQf0UZnNiA2OGi1dTDkmI"
     }
   ]
   

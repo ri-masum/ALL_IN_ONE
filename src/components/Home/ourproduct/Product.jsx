@@ -1,5 +1,5 @@
 const Product = ({ data }) => {
-  console.log(data);
+  // console.log(data);
   return (
     <div className="flex gap-5  w-72 justify-center">
       <img src={data.img} alt="" 

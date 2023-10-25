@@ -38,6 +38,8 @@ const Home = () => {
           <News></News>
         </div>
 
+
+                
        
       </div>
     </div>
