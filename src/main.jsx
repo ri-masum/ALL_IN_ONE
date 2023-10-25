@@ -17,6 +17,7 @@ import AuthProvider from './components/AuthProvider/AuthProvider.jsx';
 import PrivetRoute from './components/PrivetRoute/PrivetRoute.jsx';
 import Error from './components/Error/Error';
 import ShowProduct from './components/ShowProduct/ShowProduct';
+import Details from './components/ShowProduct/details';
 // import UpdateProduct from './components/AddProduct/UpdateProduct';
 
 
@@ -54,11 +55,11 @@ const router = createBrowserRouter([
         path:"/signin",
         element:<Signin></Signin>
       },
-      // {
-      //   path:"/updateProduct/:id",
-      //   element:<UpdateProduct></UpdateProduct>,
-      //   loader:({params})=>fetch(`http://localhost:2000/addProduct${params._id}`)
-      // }
+     {
+      path:"/details/:id",
+      element:<PrivetRoute><Details></Details></PrivetRoute>,
+      loader:()=>fetch("http://localhost:2000/Products")
+     }
 
     ]
   },
