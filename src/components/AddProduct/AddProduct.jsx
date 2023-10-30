@@ -30,7 +30,7 @@ const AddProduct = () => {
             if(data.insertedId){
                 Swal.fire(
                   'Good job!',
-                  'You Added a New Coffee',
+                  'You Added a New product',
                   'success'
                 )
 

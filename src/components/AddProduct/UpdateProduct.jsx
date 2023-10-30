@@ -1,10 +1,11 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const UpdateProduct = () => {
   const loadedData = useLoaderData();
   const { _id, name, brand, price, type, description, rating, photo } =
     loadedData;
+    const navigate=useNavigate()
   const handleUpdateProduct = (e) => {
     e.preventDefault();
     const name = e.target.name.value;
@@ -17,7 +18,7 @@ const UpdateProduct = () => {
 
     const all = { name, brand, price, type, description, rating, photo };
     console.log(all);
-    fetch(`http://localhost:2000/Products/${_id}`, {
+    fetch(`http://localhost:2000/update/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -34,6 +35,8 @@ const UpdateProduct = () => {
                 "You Updated Product Successfully",
                 "success"
               );
+
+              navigate("/")
         }
 
       });
@@ -167,7 +170,7 @@ const UpdateProduct = () => {
             </label>
           </div>
           <button className="btn btn-block mt-5 bg-[#D2B48C] normal-case font-Rancho text-xl">
-            Add Product
+            Update Product
           </button>
         </form>
       </div>
