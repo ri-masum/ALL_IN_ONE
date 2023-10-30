@@ -47,6 +47,7 @@ const router = createBrowserRouter([
       {
         path:"/mycart",
         element:<PrivetRoute><Cart></Cart></PrivetRoute>,
+        loader:()=>fetch("http://localhost:2000/cartProducts")
 
       },
       {

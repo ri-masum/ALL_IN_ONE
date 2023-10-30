@@ -1,8 +1,10 @@
 
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
 const AddProduct = () => {
+  const navigate=useNavigate()
 
     const handleNewProduct=e=>{
         e.preventDefault();
@@ -33,7 +35,7 @@ const AddProduct = () => {
                   'You Added a New product',
                   'success'
                 )
-
+                navigate("/")
 
               }
         })

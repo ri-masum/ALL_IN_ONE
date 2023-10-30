@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types'
+import Skeleton from 'react-loading-skeleton';
 import { Link } from 'react-router-dom';
+
 const Card = ({ data }) => {
 //   console.log(data);
   return (
@@ -9,7 +11,7 @@ const Card = ({ data }) => {
         <div className="card w-96  h-[500px] bg-base-100 shadow-xl">
         <figure>
           <img
-            src={data.photo}
+            src={data.photo ||<Skeleton/>}
             alt="photo"
           />
         </figure>

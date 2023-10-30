@@ -38,6 +38,15 @@ const UpdateProduct = () => {
 
               navigate("/")
         }
+       else if(data.modifiedCount===0){
+        Swal.fire(
+          "Update!",
+          "You Did't Change Anything",
+          "error"
+        );
+       }
+
+
 
       });
   };

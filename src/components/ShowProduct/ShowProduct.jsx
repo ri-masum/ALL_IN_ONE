@@ -12,6 +12,9 @@ const ShowProduct = () => {
   const { brand_name, banner_img1, banner_img2, banner_img3 } = slider;
 
   const [products, setProduct] = useState([]);
+  // loading
+  const [loading, setLoading] = useState(true);
+
   const [brandShow, setBrandShow] = useState(loadedData);
   // console.log(loadedData);
 
@@ -28,6 +31,7 @@ const ShowProduct = () => {
         // set the data to show in web
         console.log(brandsProduct);
         setProduct(brandsProduct);
+        setLoading(false);
       });
   }, []);
 
@@ -75,8 +79,14 @@ const ShowProduct = () => {
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:w-8/12 lg:mx-auto gap-5 mt-10 ">
-        {products.length > 0 ? (
-          products.map((data) => <Card key={data._id} data={data}></Card>)
+        {
+        products.length > 0 ? 
+        (products.map((data) => <Card key={data._id} data={data}></Card>)  ) : loading ? (
+          <div>
+            <div className=" flex  items-center md:justify-end min-h-[30vh] text-3xl text-red-700">
+             Loading <span className="loading loading-dots loading-lg"></span>
+            </div>
+          </div>
         ) : (
           <div className="  ">
             <img
