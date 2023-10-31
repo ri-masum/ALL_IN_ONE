@@ -21,7 +21,7 @@ const ShowProduct = () => {
   console.log(brandShow);
 
   useEffect(() => {
-    fetch("http://localhost:2000/Products")
+    fetch("https://assignment10-server-psi.vercel.app/Products")
       .then((res) => res.json())
       .then((data) => {
         // matching the brand name

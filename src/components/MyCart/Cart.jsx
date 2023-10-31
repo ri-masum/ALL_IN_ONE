@@ -15,7 +15,7 @@ const Cart = () => {
 
     useEffect(()=>{
 
-        fetch("http://localhost:2000/cartProducts")
+        fetch("https://assignment10-server-psi.vercel.app/cartProducts")
         .then(res=>res.json())
         .then(data=>{
 
@@ -40,7 +40,7 @@ const Cart = () => {
           })
           .then(result=>{
             if(result.isConfirmed){
-                fetch(`http://localhost:2000/cartProducts/${_id}`,{
+                fetch(`https://assignment10-server-psi.vercel.app/cartProducts/${_id}`,{
                     method:"DELETE"
     
                 })

@@ -19,7 +19,7 @@ const AddProduct = () => {
         const all={name,brand,price,type,description,rating,photo}
         console.log(all);
 
-        fetch("http://localhost:2000/addProduct",{
+        fetch("https://assignment10-server-psi.vercel.app/addProduct",{
             method:"POST",
             headers:{
                 'content-type':'application/json'

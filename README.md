@@ -1,8 +1,23 @@
-# React + Vite
+# BrandShop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Link ------>>> (https://faulty-teeth.surge.sh )
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Features
+    -Google Login
+    -Email Password SignUp
+    -UserName and Profile show at Navbar after login
+    -Logout
+    -Private Route
+    -React Routing
+    -To access our Product log in first
+     otherwise after clicking on any product
+     you will be redirect to login page
+    -Registered Member Can visit more pages
+    -Add Product
+    -Delete Product
+    -Add To Cart
+    -Update Product
+    -MongoDB Database
+    
+

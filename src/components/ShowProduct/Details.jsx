@@ -14,7 +14,7 @@ const Details = () => {
   const handleCart=()=>{
     console.log('click to cart');
 
-    fetch("http://localhost:2000/addToCart",{
+    fetch("https://assignment10-server-psi.vercel.app/addToCart",{
       method:"POST",
       headers:{
         'content-type':'application/json'
